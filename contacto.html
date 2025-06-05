@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUCATI - Contacto</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body style="background-color: rgb(168, 162, 162);"></body>
+<body>
+   <header>
+  <img src="_img/LOGO.jpg" alt="Logo de Ducati" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="deportiva.html">Deportiva</a></li>
+        <li><a href="enduro.html">Enduro</a></li>
+        <li><a href="naked.html">naked</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section>
+    <h1>Agenda tu Prueba de Manejo Ducati</h1>
+    <p>¿Te apasionan las motos Ducati? Completa el formulario para agendar una prueba de manejo o recibir más información sobre nuestros modelos.</p>
+    <form action="reservar_prueba.php" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="telefono">Número de teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <label for="modelo">Modelo Ducati de interés:</label>
+      <select id="modelo" name="modelo" required>
+        <option value="">-- Selecciona un modelo --</option>
+        <option value="deportiva.html">Panigale V4R</option>
+        <option value="enduro.html">Multistrada v4S</option>
+        <option value="naked.html">Streetfighter v4S</option>
+      </select>
+
+      <label for="fecha">Fecha preferida para la prueba:</label>
+      <input type="date" id="fecha" name="fecha" required />
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+      <button type="submit">Solicitar prueba de manejo</button>
+      <button type="submit" style="margin-top: 1em; background-color: rgb(0, 221, 184); color: white; padding: 0.75em 1.5em; border: none; border-radius: 5px; font-size: 1em;">
+        Enviar formulario
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer>
+
+
+
+  <footer>
+    <p>&copy; © 2025 Ducati Motor Holding S.p.A. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
